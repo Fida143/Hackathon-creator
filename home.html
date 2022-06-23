@@ -1,0 +1,195 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scale=no">
+    <meta name="google-site-verification" content="QWqxCvuiSI3YC4Lsa3qA_9eeVwHCEWlbwMoEUShqK9g" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="index.css">
+
+   
+    <title> Hackathon</title>
+</head>
+
+<body>
+    <!-- ---------------------------------navbar----------------------------------------------- -->
+    <div class="navbar">
+        <div class="rightnav">
+
+            <ul>
+                <li>
+                    <p>Create awesome Hackathon Challenges</p>
+                </li>
+                <li><input type="text" placeholder="Hackathon Name" id="input">
+                    <button type="submit" id="btnn" onclick="hackathon">search</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- -----------------------------heading ------------------------------------------  -->
+        <div class="body">
+            <div class="heading">
+                <div class="head">
+                   
+                    <ul>
+                        <li><a  href="home.html"> Home </a><div class="underline1"></div></li>
+                        <li><a href="index.html">Upcomming </a></li>
+                        <li><a href="indexac.html">Active </a></li>
+                        <li><a  href="indexpa.html"> past</a></li>
+                    </ul>
+                </div>
+                <div class="sort">
+                    Sort<select>
+                       <option >none</option> 
+                       <option >newest</option> 
+                       <option >oldest</option> 
+                    </select>
+                </div>
+                <div class="filter"> Filter <select>
+                        <option>None</option>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </div>
+            </div>
+           
+            <hr>
+           
+        </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+
+
+<div class="up">
+    <h2 class="top">UPCOMMMING</h2>
+<div class="column">
+    <div class="image"> <img  id="display" src=""></div>
+    <div class="hname"><span id="nameu"></span></div>
+    <div class="hdescription"><span id="descriptionu"></span></div>
+    <div class="hlevel">LEVEL:<span id="levelu"></span></div>
+    <div class="hstartdate">STARTDATE:<span id="startdateu"></span></div>
+    <div class="hdate">ENDDATE:<span id="enddateu"></span></div>
+    <div class="hover"><button class="trash"><i  class="fa fa-trash" aria-hidden="true"></i></button>
+    <button class="edit"><i class="fa fa-file" aria-hidden="true"></i></button></div>
+    
+</div> 
+</div>
+
+
+
+
+
+<div class="up">
+    <h2 class="top">ACTIVE</h2>
+<div class="column1">
+    <div class="image"> <img  id="display1" src=""></div>
+    <div class="hname"><span id="namea"></span></div>
+    <div class="hdescription"><span id="descriptiona"></span></div>
+    <div class="hlevel">LEVEL:<span id="levela"></span></div>
+    <div class="hstartdate">STARTDATE:<span id="startdatea"></span></div>
+    <div class="hdate">ENDDATE:<span id="enddatea"></span></div>
+    <div class="hover"><button class="trash"><i  class="fa fa-trash" aria-hidden="true"></i></button>
+        <button class="edit"><i class="fa fa-file" aria-hidden="true"></i></button></div>
+    
+</div>
+</div>
+
+
+
+
+
+<div class="up">
+    <h2 class="top">PAST</h2>
+<div class="column2">
+    <div class="image"> <img  id="display2" src=""></div>
+    <div class="hname"><span id="namep"></span></div>
+    <div class="hdescription"><span id="descriptionp"></span></div>
+    <div class="hlevel">LEVEL:<span id="levelp"></span></div>
+    <div class="hstartdate">STARTDATE:<span id="startdatep"></span></div>
+    <div class="hdate">ENDDATE:<span id="enddatep"></span></div>
+    <div class="hover"><button class="trash"><i  class="fa fa-trash" aria-hidden="true"></i></button>
+        <button class="edit"><i class="fa fa-file" aria-hidden="true"></i></button></div>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+//-------------------------------------------- get element of upcome from local storage -------------------------------------------------
+
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        const displayUrl=localStorage.getItem("imgvalue");
+       
+if(displayUrl){
+    document.querySelector("#display").setAttribute("src",displayUrl);
+}
+
+    });
+
+    document.getElementById("nameu").innerHTML=localStorage.getItem("textvalue");
+    document.getElementById("descriptionu").innerHTML=localStorage.getItem("descriptionvalue");
+    document.getElementById("levelu").innerHTML=localStorage.getItem("levelvalue");
+    document.getElementById("startdateu").innerHTML=localStorage.getItem("startdatevalue");
+    document.getElementById("enddateu").innerHTML=localStorage.getItem("enddatevalue");
+
+
+//-------------------------------------------- get element of active  from local storage ----------------------------------- 
+
+document.addEventListener("DOMContentLoaded",()=>{
+        const displayUrl1=localStorage.getItem("imgvalue1");
+       
+if(displayUrl1){
+    document.querySelector("#display1").setAttribute("src",displayUrl1);
+}
+});
+
+document.getElementById("namea").innerHTML=localStorage.getItem("textvalue1");
+document.getElementById("descriptiona").innerHTML=localStorage.getItem("descriptionvalue1");
+document.getElementById("levela").innerHTML=localStorage.getItem("levelvalue1");
+document.getElementById("startdatea").innerHTML=localStorage.getItem("startdatevalue1");
+document.getElementById("enddatea").innerHTML=localStorage.getItem("enddatevalue1");
+
+
+
+//----------------------------------------------- get element of past  from local storage ---------------------------------------------------
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+        const displayUrl2=localStorage.getItem("imgvalue2");
+       
+if(displayUrl2){
+    document.querySelector("#display2").setAttribute("src",displayUrl2);
+}
+});
+
+document.getElementById("namep").innerHTML=localStorage.getItem("textvalue2");
+document.getElementById("descriptionp").innerHTML=localStorage.getItem("descriptionvalue2");
+document.getElementById("levelp").innerHTML=localStorage.getItem("levelvalue2");
+document.getElementById("startdatep").innerHTML=localStorage.getItem("startdatevalue2");
+document.getElementById("enddatep").innerHTML=localStorage.getItem("enddatevalue2");
+
+
+
+
+</script>
+    <script src="index.js"> </script>
+</body>
+
+</html>

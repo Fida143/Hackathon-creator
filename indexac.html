@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scale=no">
+    <meta name="google-site-verification" content="QWqxCvuiSI3YC4Lsa3qA_9eeVwHCEWlbwMoEUShqK9g" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="index.css">
+  
+    <title> Hackathon</title>
+</head>
+
+<body>
+
+    <!-- ---------------------------------navbar----------------------------------------------- -->
+    <div class="navbar">
+        <div class="rightnav">
+
+            <ul>
+                <li>
+                    <p>Create Active Hackathon Challenges</p>
+                </li>
+                <li><input type="text" placeholder="Hackathon Name" id="input">
+                    <button type="submit" id="btnn">search</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- ------------------------------heading -------------------------------------------  -->
+        <div class="body">
+            <div class="heading">
+                <div class="head">
+                    
+                    <ul>
+                        <li><a  href="home.html"> Home </a></li>
+                        <li><a href="index.html">Upcomming </a></li>
+                        <li><a href="indexac.html">Active </a><div class="underline1"></div></li>
+                        <li><a href="indexpa.html">Past </a></li>
+                    </ul>
+                </div>
+                <!-- <div class="sort">
+                    Sort<select>
+                       <option >none</option> 
+                       <option >newest</option> 
+                       <option >oldest</option> 
+                    </select>
+                </div>
+                <div class="filter"> Filter <select>
+                        <option>None</option>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </div> -->
+            </div>
+           
+<!-- --------------------------   create hackathon ---------------------------------------------------------- -->
+
+            <hr>
+            <div><button id="btn1"  >
+                Create Hackathon <i class="fa fa-upload" aria-hidden="true"></i></button></div>
+        </div>
+
+
+
+<script>
+
+// ------------------------create active  multi hackathon in single click ---------------------------------
+
+
+    const addButton1= document.querySelector('#btn1');
+const addhackathon1=(text='')=>{
+  const hackathon1=document.createElement('div');
+hackathon1.classList.add('hackathon1');
+const htmlData=`
+<div class="column1" >
+    <form action="home.html" >
+      <i id="can1" class="fa fa-times" aria-hidden="true"></i>
+      <input type="file" id="image1"accept="image/jpg,image/png">
+      <div class="title" ><input id="nam1" type="text" placeholder="Name"></div>
+      <div class="date" > Start Date<input type="datetime-local"  id="startdate1"></div>
+      <div class="date"  >End Date <input type="datetime-local" id="enddate1"></div>
+      <div class="description"><textarea cols="38" rows="6" placeholder=" Hackathon description..." id="description1"></textarea></div>
+      <div class="level" >Level:easy<input id="level1" type="radio" name="Level" value="EASY">medium<input type="radio" name="Level" value="MEDIUM">hard<input type="radio" name="Level" value="HARD"></div>
+      <input  class="btn" id="save1" type="submit" value="save" onclick="displayform1()">
+    </form>
+    </div>
+      `;
+      hackathon1.insertAdjacentHTML('afterbegin',htmlData);
+      console.log(hackathon1);
+const delButton1=hackathon1.querySelector('#can1');
+
+delButton1.addEventListener('click',()=>{
+  hackathon1.remove();
+   
+})
+
+document.body.appendChild(hackathon1);
+
+
+}
+addButton1.addEventListener('click',()=> addhackathon1());
+
+
+
+
+
+
+
+
+// --------------------------------------------------- home display active----------------------------------------------------
+
+
+function displayform1(){
+  var n1 =document.getElementById("nam1").value;
+  var start1=document.getElementById("startdate1").value;
+  var end1 =document.getElementById("enddate1").value;
+  var descrip1 =document.getElementById("description1").value;
+  var lev1=document.getElementById("level1").value;
+
+  localStorage.setItem("textvalue1",n1);
+  localStorage.setItem("startdatevalue1",start1);
+  localStorage.setItem("enddatevalue1",end1);
+  localStorage.setItem("descriptionvalue1",descrip1);
+  localStorage.setItem("levelvalue1",lev1);
+
+
+
+
+  document.querySelector("#image1").addEventListener("change",function() {
+    const reader = new FileReader();
+      
+      reader.addEventListener("load",()=>{
+          localStorage.setItem("imgvalue1",reader.result);
+        });
+        
+        reader.readAsDataURL(this.files[0]);
+
+});
+
+  return false;
+}
+
+</script>
+
+
+
+
+
+
+    <script src="index.js" > </script>
+</body>
+
+</html>

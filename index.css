@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #4392f4;
+}
+/* --------------------------------------------navbar--------------------------------------------- */
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 132px;
+  background-color: #0c2647;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+ position: fixed;
+  cursor: pointer;
+  top: 0;
+  
+}
+#input {
+    height: 36px;
+    width: 422px;
+    font-size: 16px;
+    padding: 0px 16px;
+    background-color: white;
+  }
+#btnn{
+  height: 39px;
+  width: 98px;
+  align-items: center;
+  border-radius: 9px;
+}
+.rightnav ul li {
+  padding: 0 0 0 40px;
+  list-style: none;
+  color: white;
+}
+
+.rightnav ul {
+  display: flex;
+  align-items: center;
+} 
+/* -----------------------------------heading---------------------------------------- */
+.body{
+  width: 100%;
+  
+}
+.sort{
+  margin-top: 130px;
+  margin-left: 40%;
+  font-size: 33px;
+  color:  #0c2647;
+
+}
+.filter{
+  margin-top: 130px;
+  margin-left: 5%;
+  color:  #0c2647;
+  font-size: 33px;
+}
+.fa-upload:before {
+  margin-left: 23px;
+  content: "\f093";
+  margin-right: 13px;
+}
+.btn{
+height: 33px;
+  border-radius: 9px;
+  margin-top: 33px;
+  margin-left: 45%;
+  background-color:#0c2647;
+  color: white;
+  border: 5px solid white;
+}
+.btn:hover{
+  background-color: white;
+  color: #0c2647;
+}
+#btn1{
+height: 33px;
+  border-radius: 9px;
+  margin-top: 33px;
+  margin-left: 45%;
+  background-color:#0c2647;
+  color: white;
+  border: 5px solid white;
+}
+#btn1:hover{
+  background-color: white;
+  color: #0c2647;
+}
+#btn2{
+height: 33px;
+  border-radius: 9px;
+  margin-top: 33px;
+  margin-left: 45%;
+  background-color:#0c2647;
+  color: white;
+  border: 5px solid white;
+}
+#btn2:hover{
+  background-color: white;
+  color: #0c2647;
+}
+.hackathon{
+  width: 467px;
+  margin-left: 5px;
+  margin-top: 33px;
+  display: inline-flex;
+}
+.hackathon1{
+  width: 467px;
+  margin-left: 5px;
+  margin-top: 33px;
+   display: inline-flex; 
+}
+.hackathon2{
+  width: 467px;
+  margin-left: 5px;
+  margin-top: 33px;
+ display: inline-flex; 
+}
+.heading {
+  padding-top: 10px;
+  font-size: 33px;
+  display: flex;
+ 
+}
+.head{
+  padding-top: 130px;
+}
+.head ul{
+  display: flex;
+}
+.head ul li{
+  list-style: none;
+  padding-left: 63px;
+}
+.head ul li a{
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+}
+.underline1{
+  width: 100px;
+  height: 5px;
+  background: #0c2647;
+  margin-top: 35px;
+}
+.column{
+  width: 400px;
+  height: 564px;
+  background-color: #0c2647;
+  border: 5px solid white;
+  border-radius: 23px 0px 23px 0px;
+  margin : 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34px;
+  cursor: pointer;
+}
+.column1{
+  width: 400px;
+  height: 564px;
+  background-color: #0c2647;
+  border: 5px solid white;
+  border-radius: 23px 0px 23px 0px;
+  margin : 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34px;
+  cursor: pointer;
+}
+.column2{
+  width: 400px;
+  height: 564px;
+  background-color: #0c2647;
+  border: 5px solid white;
+  border-radius: 23px 0px 23px 0px;
+  margin : 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34px;
+  cursor: pointer;
+}
+.text{
+  text-align: center;
+  justify-content: center;
+  font-size: 33px;
+}
+  /* -------------------------------form----------------------------- */
+  .title{
+    margin-top: 70px;
+    width: 400px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+  }
+  #nam{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  #nam1{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  #nam2{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  .date{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: white;
+  }
+
+  .description{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  .level{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: white;
+  }
+  #image{
+    width: 400px;
+    margin-left: 50px; 
+  }
+  #image1{
+    width: 400px;
+    margin-left: 50px;
+  }
+  #image2{
+    width: 400px;
+    margin-left: 50px; 
+  }
+  #save{
+    height: 39px;
+    margin-left: 293px;
+    margin-top: -56px;
+    width: 98px;
+    border-radius: 9px;
+  }
+  #save1{
+    height: 39px;
+    margin-left: 293px;
+    margin-top: -56px;
+    width: 98px;
+    border-radius: 9px;
+  }
+  #save2{
+    height: 39px;
+    margin-left: 293px;
+    margin-top: -56px;
+    width: 98px;
+    border-radius: 9px;
+  }
+  #can{
+    height: 33px;
+    width: 26px;
+    margin-left: 356px;
+   margin-top: 12px;
+   font-size: 33px;
+   background-color: red;
+  }
+  #can1{
+    height: 33px;
+    width: 26px;
+    margin-left: 356px;
+   margin-top: 12px;
+   font-size: 33px;
+   background-color: red;
+  }
+  #can2{
+    height: 33px;
+    width: 26px;
+    margin-left: 356px;
+   margin-top: 12px;
+   font-size: 33px;
+   background-color: red;
+  }
+  /* -----------------------------------display form ---------------------------------- */
+  .displayform{
+    width: 400px;
+  height: 500px;
+  border: 5px solid white;
+  border-radius: 23px 0px 23px 0px;
+  margin : 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34px;
+  }
+  .displayimage{
+    width: 400px;
+    height: 33px;
+  }
+  .hover{
+    height: 33px;
+    width: 64px;
+    display: inline-flex;
+    margin-left:300px ;
+    cursor: pointer;
+  }
+  .trash{
+    background-color: red;
+    width: 33px;
+    height: 33px;
+  }
+.edit{
+  background-color: lightyellow;
+    width: 33px;
+    height: 33px;
+    color: #0c2647;
+}
+
+
+
+  /* ----------------------------------------home column---------------------------- */
+
+#startdateu{
+  color: yellow;
+}
+#enddateu{
+  color: yellow;
+}
+#nameu{
+  color: yellow; 
+  display: inline;
+}
+#levelu{
+  color: yellow;
+}
+#startdatea{
+  color: yellow;
+}
+#enddatea{
+  color: yellow;
+}
+#namea{
+  color: yellow; 
+  display: inline;
+}
+#levela{
+  color: yellow;
+}
+#startdatep{
+  color: yellow;
+}
+#enddatep{
+  color: yellow;
+}
+#namep{
+  color: yellow; 
+  display: inline;
+}
+#levelp{
+  color: yellow;
+}
+.image{
+  width: 400px;
+  height: 170px;
+  border-radius: 23px 0 0 0 ;
+  background-size: cover;
+}
+#display{
+  width: 400px;
+  height: 170px;
+  background-size: cover;
+}
+#display1{
+  width: 400px;
+  height: 170px;
+  background-size: cover;
+}
+#display2{
+  width: 400px;
+  height: 170px;
+  background-size: cover;
+}
+.hname{
+  word-break: break-all;
+  width: 400px;
+  height: 50px;
+font-size: 23px;
+text-align: center;
+align-items: center;
+font-weight: bold;
+margin-top: 15px;
+color: whitesmoke;
+}
+.hstartdate{
+  width: 400;
+  height: 33px;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+.hdate{
+  width: 400;
+  height: 33px;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+.hdescription{
+  color: yellow;
+  word-break: break-all;
+  margin-left: 50px;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+margin-top: 15px;
+color: whitesmoke;
+}
+.hlevel{
+  width: 400;
+  height: 33px;
+  text-align: center;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+
+
+/* -------------------------------home div-------------------------------- */
+
+
+.up{
+  width: 100%;
+  text-align: center;
+  margin: 50PX 50PX 50PX 50PX;
+}
+.top{
+  text-align: center;
+  padding: 30px;
+  font-size: 33px;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #0c2647;
+
+}
+.top::after{
+  content: '';
+  background: #0c2647;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
